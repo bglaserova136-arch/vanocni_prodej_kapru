@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vánoční prodej kaprů</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: url('./background.jpg') center / cover no-repeat fixed;
+      color: #e8f5ef;
+    }
+
+    .overlay {
+      background: rgba(0, 30, 10, 0.75);
+      min-height: 100vh;
+      padding-bottom: 40px;
+    }
+
+    header {
+      background: #dff1e9;
+      color: #123;
+      text-align: center;
+      padding: 12px;
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 42px;
+      font-weight: 300;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    h1 strong {
+      font-weight: 700;
+    }
+
+    .badge {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 10px 16px;
+      background: #e6f4ee;
+      color: #123;
+      font-size: 14px;
+    }
+
+    .info {
+      margin-top: 20px;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .section {
+      margin-top: 60px;
+    }
+
+    .section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: rgba(0, 40, 20, 0.7);
+      padding: 20px;
+      margin-bottom: 30px;
+      text-align: left;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    footer {
+      max-width: 800px;
+      margin: 60px auto 0;
+      padding: 0 20px;
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      opacity: 0.85;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 30px;
+      }
+
+      footer {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      Neratovická 193, Kostelec nad Labem, 277 13
+    </header>
+
+    <main>
+      <h1>KAŽDOROČNÍ PRODEJ<br><strong>VÁNOČNÍCH KAPRŮ</strong></h1>
+
+      <div class="badge">Z Rožmitálu pod Třemšínem</div>
+
+      <div class="info">
+        <p>Prodej začíná <strong>17. 12. 2025</strong>, od <strong>14 h</strong>.</p>
+        <p>Platba pouze v <strong>hotovosti</strong>.</p>
+        <br />
+        <p>Otevírací doba od <strong>18. 12.</strong> 8 h – 19 h</p>
+      </div>
+
+      <div class="section">
+        <h2>Ceník</h2>
+
+        <div class="card">
+          <div class="row"><span>Kapr I. jakost do 2,4 kg</span><span>125 Kč/kg</span></div>
+          <div class="row"><span>Kapr výběr od 2,4 kg</span><span>129 Kč/kg</span></div>
+          <div class="row"><span>Amur</span><span>130 Kč/kg</span></div>
+          <div class="row"><span>Štika</span><span>307 Kč/kg</span></div>
+          <div class="row"><span>Candát</span><span>420 Kč/kg</span></div>
+          <div class="row"><span>Lín</span><span>149 Kč/kg</span></div>
+        </div>
+
+        <div class="card">
+          <div class="row"><strong>Zabití ryb</strong><strong>ZDARMA</strong></div>
+          <div class="row"><span>Kuchání, škrábání</span><span>68 Kč/ks</span></div>
+          <div class="row"><span>Stahování</span><span>132 Kč/ks</span></div>
+          <div class="row"><span>Filety</span><span>160 Kč/ks</span></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        Provozovatel: Barbora Glaserová<br />
+        IČO: 10690131<br />
+        Tel.: 777 703 594<br />
+        Objednávky pouze SMS, obratem odpovíme.
+      </div>
+      <div>
+        Neratovická 193<br />
+        Kostelec nad Labem, 277 13<br />
+        8 h – 19 h
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
